@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightPoc.API", "FloghtPoc.API\FlightPoc.API.csproj", "{7998199B-0192-4A15-B054-6A9E57877430}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightPoc.Tests", "FlightPoc.Tests\FlightPoc.Tests.csproj", "{709A6C0D-A375-416D-96A9-CB20FBC0BF81}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7998199B-0192-4A15-B054-6A9E57877430}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7998199B-0192-4A15-B054-6A9E57877430}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7998199B-0192-4A15-B054-6A9E57877430}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7998199B-0192-4A15-B054-6A9E57877430}.Release|Any CPU.Build.0 = Release|Any CPU
+		{709A6C0D-A375-416D-96A9-CB20FBC0BF81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{709A6C0D-A375-416D-96A9-CB20FBC0BF81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{709A6C0D-A375-416D-96A9-CB20FBC0BF81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{709A6C0D-A375-416D-96A9-CB20FBC0BF81}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F5211F5D-678F-472D-BDEA-0CC889F7ACE5}
+	EndGlobalSection
+EndGlobal
