@@ -18,13 +18,13 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: '8.0.x'  # Or 7.0.x, 6.0.x depending on your project
+        dotnet-version: '8.0.x'  # Adjust to your version if needed
 
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore FlightPoc.sln
 
     - name: Build
-      run: dotnet build --no-restore --configuration Release
+      run: dotnet build FlightPoc.sln --configuration Debug --no-restore
 
     - name: Run tests
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test FlightPoc.sln --configuration Debug --no-restore --verbosity normal
