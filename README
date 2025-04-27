@@ -1,0 +1,79 @@
+# ✈️ Flight
+
+**Flight** is a C# application focused exclusively on checking in passengers.  
+It does not handle ticket reservations, flight scheduling, or payment processing — its only responsibility is managing the check-in process.
+
+## 📋 Features
+
+- Passenger check-in
+- Validate overbooking and bagagge limis
+- Update passenger status to "Checked In"
+- Basic REST API for check-in operations
+- Error handling and input validation
+
+## 🛠️ Technologies
+
+- .NET 8 (or .NET 6)
+- C#
+- ASP.NET Core Web API
+- Entity Framework Core
+- SQL Server (required)
+
+## 🗄️ Database
+
+The application requires a running **SQL Server** instance.  
+It uses Entity Framework Core for data access.  
+Connection string can be configured in `appsettings.json`:
+
+```json
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=YOUR_SERVER_NAME;Database=FlightDb;Trusted_Connection=True;"
+  }
+}
+```
+
+You must create the database manually or let EF Core create it via migrations.
+
+## 🚀 How to Run
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/archer87pl/flight-poc.git
+   cd flight
+   ```
+
+2. **Configure the connection string** in `appsettings.json`.
+
+3. **Apply migrations** to create the database schema:
+
+   ```bash
+   dotnet ef database update
+   ```
+
+4. **Run the application:**
+
+   ```bash
+   dotnet run
+   ```
+
+5. (Optional) Access the API documentation via Swagger at:
+
+   ```
+   https://localhost:5001/swagger
+   ```
+
+## 🧪 Testing
+
+You can test the check-in endpoints using tools like:
+
+- Postman
+- Swagger UI
+- curl
+
+
+## 📄 License
+
+This project is licensed under the MIT License.  
+Feel free to use it, modify it, and adapt it to your needs!
